@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313/"
-title = "Jane - A super concise theme for Hugo"
+title = "philharmonic77's blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-jane"
@@ -123,21 +123,21 @@ defaultContentLanguage = "en"           # Default language to use
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
-    d-facebook = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
-    f-google = "http://localhost:1313"
-    g-github = "http://localhost:1313"
-    h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
-    j-douban = "http://localhost:1313"
-    k-pocket = "http://localhost:1313"
-    l-tumblr = "http://localhost:1313"
-    m-instagram = "http://localhost:1313"
-    n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
-    o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
+    #a-email = "mailto:your@email.com"
+    #b-stack-overflow = "http://localhost:1313"
+    #c-twitter = "http://localhost:1313"
+    #d-facebook = "http://localhost:1313"
+    #e-linkedin = "http://localhost:1313"
+    #f-google = "http://localhost:1313"
+    g-github = "https://github.com/philharmonic77"
+    h-weibo = "https://weibo.com/philharmonic777?refer_flag=1001030101_&is_hot=1"
+    #i-zhihu = "http://localhost:1313"
+    #j-douban = "http://localhost:1313"
+    #k-pocket = "http://localhost:1313"
+    #l-tumblr = "http://localhost:1313"
+    #m-instagram = "http://localhost:1313"
+    #n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
+    #o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
