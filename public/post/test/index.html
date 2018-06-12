@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Clustering · philharmonic77&#39;s blog</title>
+  <title>聚类分析在有监督学习里的应用 - philharmonic77&#39;s blog</title>
   <link rel="alternate" hreflang="en" href="/" />
 
 <meta name="renderer" content="webkit" />
@@ -25,7 +25,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JIN Shuhan" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -36,8 +37,7 @@
 <meta name="generator" content="Hugo 0.36" />
 
 
-<link rel="canonical" href="/tags/clustering/" />
-<link href="/tags/clustering/index.xml" rel="alternate" type="application/rss+xml" title="philharmonic77&#39;s blog" />
+<link rel="canonical" href="/post/test/" />
 
 
 
@@ -57,30 +57,41 @@
 
 
 
-<meta property="og:title" content="Clustering" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tags/clustering/" />
+<meta property="og:title" content="聚类分析在有监督学习里的应用" />
+<meta property="og:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/test/" />
 
 
 
-<meta property="og:updated_time" content="2018-06-12T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-06-12T00:00:00&#43;00:00"/>
 
-
-
-
-
-
+<meta property="article:modified_time" content="2018-06-12T00:00:00&#43;00:00"/>
 
 
 
 
-<meta itemprop="name" content="Clustering">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+
+
+
+
+
+
+<meta itemprop="name" content="聚类分析在有监督学习里的应用">
+<meta itemprop="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。">
+
+
+<meta itemprop="datePublished" content="2018-06-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-06-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="49">
+
+
+
+<meta itemprop="keywords" content="Clustering," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Clustering"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="聚类分析在有监督学习里的应用"/>
+<meta name="twitter:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -272,56 +283,128 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
-  
+          <article class="post bg-white">
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">Tag: Clustering</h2>
+    <header class="post-header">
+      <h1 class="post-title">聚类分析在有监督学习里的应用</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 2018-06-12 </span>
+        <div class="post-category">
+            
+              <a href="/categories/r2.ai/"> R2.ai </a>
+            
+          </div>
+        <span class="more-meta"> 49 words </span>
+        <span class="more-meta"> 1 min read </span>
       </div>
+    </header>
+
     
-  
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#先聚类再分类">先聚类再分类</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#简单数据集测试">简单数据集测试</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
-  
-    <div class="archive-post">
-      <span class="archive-post-time">
-        2018-06-12
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/test/" class="archive-post-link">
-          聚类分析在有监督学习里的应用
-        </a>
-      </span>
+    
+    <div class="post-content">
+      
+
+<h2 id="先聚类再分类">先聚类再分类</h2>
+
+<p><em>参考文献：<a href="https://arxiv.org/abs/1509.06163">The Utility of Clustering in Prediction Tasks</a></em></p>
+
+<h5 id="简单数据集测试">简单数据集测试</h5>
+
+<blockquote>
+<p>数据集 kaggle-Titanic</p>
+</blockquote>
+
+<p>先做简单的<a href="https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python">特征提取</a>，得到训练数据集。</p>
+
+<p><img src="/image/Using Clustering in the Pre-processing Procedure/training set.PNG" alt="image" /></p>
+
     </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">JIN Shuhan</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-06-12</span>
+  </p>
   
-</section>
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
 
+    
+    
 
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/clustering/">Clustering</a>
+          
+        </div>
 
-
-
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+    
 
   
-  
-  
 
   
-  
 
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
-
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: 'test.md',
+    title: '聚类分析在有监督学习里的应用',
+    link: decodeURI(location.href),
+    desc: '先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。',
+    owner: 'philharmonic77',
+    repo: 'https:\/\/github.com\/philharmonic77\/Blog-s-Comment.git',
+    oauth: {
+      client_id: 'ccb29cbb644371e81c41',
+      client_secret: 'e72a578ffb76fff93b8f9ac3e3399164c7b77800'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+  </article>
         </div>
       </div>
     </main>
@@ -367,6 +450,13 @@
 <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
 <script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
