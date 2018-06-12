@@ -1,5 +1,5 @@
 ---
-title: "聚类分析在无监督学习里的应用"
+title: "聚类分析在有监督学习里的应用"
 date: 2018-06-12
 categories: ["R2.ai"]
 tags: ["Clustering"]
