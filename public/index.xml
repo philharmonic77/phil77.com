@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>聚类分析在无监督学习里的应用</title>
+      <title>聚类分析在有监督学习里的应用</title>
       <link>/post/using-clustering-in-the-pre-processing-procedure/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,7 @@
 
 &lt;h2 id=&#34;先聚类再分类&#34;&gt;先聚类再分类&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;参考文献：The Utility of Clustering in Prediction Tasks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;参考文献：&lt;a href=&#34;https://arxiv.org/abs/1509.06163&#34;&gt;The Utility of Clustering in Prediction Tasks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h5 id=&#34;简单数据集测试&#34;&gt;简单数据集测试&lt;/h5&gt;
 
