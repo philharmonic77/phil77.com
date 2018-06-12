@@ -13,11 +13,11 @@
     
     <item>
       <title>聚类分析在有监督学习里的应用</title>
-      <link>/post/test/</link>
+      <link>/post/using-clustering-in-the-pre-processing-procedure/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/test/</guid>
-      <description>先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。</description>
+      <guid>/post/using-clustering-in-the-pre-processing-procedure/</guid>
+      <description>先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks ==简单==数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且++有解释性++的训练数据和测</description>
     </item>
     
   </channel>
