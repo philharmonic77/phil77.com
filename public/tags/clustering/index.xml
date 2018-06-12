@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clustering on philharmonic77&#39;s blog</title>
+    <link>/tags/clustering/</link>
+    <description>Recent content in Clustering on philharmonic77&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>聚类分析在无监督学习里的应用</title>
+      <link>/post/using-clustering-in-the-pre-processing-procedure/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/using-clustering-in-the-pre-processing-procedure/</guid>
+      <description>先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。</description>
+    </item>
+    
+  </channel>
+</rss>
