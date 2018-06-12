@@ -111,7 +111,7 @@ defaultContentLanguage = "en"           # Default language to use
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = "philharmonic77"              # Your GitHub ID
-    repo = "https://github.com/philharmonic77/Blog-s-Comment.git" # The repo to store comments
+    repo = "https://github.com/philharmonic77/Blog-s-Comment" # The repo to store comments
     clientId = "ccb29cbb644371e81c41"           # Your client ID
     clientSecret = "e72a578ffb76fff93b8f9ac3e3399164c7b77800"       # Your client secret
 
