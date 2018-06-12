@@ -14,7 +14,7 @@ menu:
 ---
 
 ## 先聚类再分类
-*参考文献：The Utility of Clustering in Prediction Tasks*
+*参考文献：[The Utility of Clustering in Prediction Tasks](https://arxiv.org/abs/1509.06163)*
 
 ##### 简单数据集测试
 > 数据集 kaggle-Titanic
