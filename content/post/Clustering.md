@@ -16,10 +16,10 @@ menu:
 ### 先聚类再分类
 *参考文献：[The Utility of Clustering in Prediction Tasks](https://arxiv.org/abs/1509.06163)*
 
-#### ==简单==数据集测试
+#### 简单数据集测试
 > 数据集 [kaggle-Titanic](https://www.kaggle.com/c/titanic/data)
 
-先做[特征提取](https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python)，得到全部都是数值型变量，且++有解释性++的训练数据和测试数据。
+先做[特征提取](https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python)，得到全部都是数值型变量，且有解释性的训练数据和测试数据。
 	
 ![image](/image/Using Clustering in the Pre-processing Procedure/training set.PNG)
 
