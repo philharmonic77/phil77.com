@@ -13,10 +13,10 @@
     
     <item>
       <title>聚类分析在有监督学习里的应用</title>
-      <link>/post/using-clustering-in-the-pre-processing-procedure/</link>
+      <link>/post/cluster-in-supervised/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/using-clustering-in-the-pre-processing-procedure/</guid>
+      <guid>/post/cluster-in-supervised/</guid>
       
         <description>
 
@@ -24,17 +24,63 @@
 
 &lt;p&gt;&lt;em&gt;参考文献：&lt;a href=&#34;https://arxiv.org/abs/1509.06163&#34;&gt;The Utility of Clustering in Prediction Tasks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;简单-数据集测试&#34;&gt;==简单==数据集测试&lt;/h4&gt;
+&lt;h4 id=&#34;简单数据集测试&#34;&gt;简单数据集测试&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;数据集 &lt;a href=&#34;https://www.kaggle.com/c/titanic/data&#34;&gt;kaggle-Titanic&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;先做&lt;a href=&#34;https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python&#34;&gt;特征提取&lt;/a&gt;，得到全部都是数值型变量，且++有解释性++的训练数据和测试数据。&lt;/p&gt;
+&lt;p&gt;先做&lt;a href=&#34;https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python&#34;&gt;特征提取&lt;/a&gt;，得到全部都是数值型变量，且有解释性的训练数据和测试数据。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/image/Using Clustering in the Pre-processing Procedure/training set.PNG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;将training dataset用R2-Learn进行训练，并在delpoyment环节&lt;/p&gt;
+&lt;h5 id=&#34;1-直接采用分类模型&#34;&gt;1. 直接采用分类模型&lt;/h5&gt;
+
+&lt;p&gt;将training dataset用&lt;a href=&#34;http://stage20.newa-tech.com:22000/modeling/169/2&#34;&gt;R2-Learn&lt;/a&gt;进行训练，选择推荐的ensemble模型，
+并在&lt;a href=&#34;http://stage20.newa-tech.com:22000/deploy/169&#34;&gt;deployment环节&lt;/a&gt;使用test dataset，得到y值的预测之后，上传到kaggle进行评分。&lt;/p&gt;
+
+&lt;p&gt;采用auto-sklearn 0.3.0以默认参数训练5min，同样使用kaggle评分。结果汇总如下：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;th&gt;R2-Learn&lt;/th&gt;
+&lt;th&gt;AutoML 0.3.0&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;训练时间&lt;/td&gt;
+&lt;td&gt;5 min&lt;/td&gt;
+&lt;td&gt;5 min&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;训练集AUC&lt;/td&gt;
+&lt;td&gt;0.87&lt;/td&gt;
+&lt;td&gt;0.84&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;kaggle accuracy&lt;/td&gt;
+&lt;td&gt;0.732&lt;/td&gt;
+&lt;td&gt;0.775&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&#34;2-先对数据集进行聚类-再对各个类进行训练&#34;&gt;2. 先对数据集进行聚类，再对各个类进行训练&lt;/h5&gt;
+
+&lt;p&gt;总体思路见下图：
+&lt;img src=&#34;/image/Using Clustering in the Pre-processing Procedure/screen shot of method.PNG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;2-1-不使用ensemble的情况&#34;&gt;2.1 不使用ensemble的情况&lt;/h6&gt;
+
+&lt;p&gt;k依次取1,2,3,&amp;hellip;, 每一轮计算中，先将training data聚成k类，然后分别使用auto-sklearn 0.3.0/random forest训练，最终汇集预测值，然后计算AUC。完成全部计算后，对比不同k值对预测的影响。找到预测效果较好的设定，并尝试解释聚类的合理性。&lt;/p&gt;
+
+&lt;p&gt;此例中，样本量较小，所以至多考虑3类。在样本量较大时，可以加入k值的自动选择机制。&lt;/p&gt;
 </description>
       
     </item>
