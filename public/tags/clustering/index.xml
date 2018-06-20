@@ -17,7 +17,7 @@
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/cluster-in-supervised/</guid>
-      <description>先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采</description>
+      <description>先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该</description>
     </item>
     
   </channel>

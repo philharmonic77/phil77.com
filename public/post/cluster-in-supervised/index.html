@@ -25,7 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JIN Shuhan" />
-  <meta name="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采" />
+  <meta name="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -58,7 +58,7 @@
 
 
 <meta property="og:title" content="聚类分析在有监督学习里的应用" />
-<meta property="og:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采" />
+<meta property="og:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/cluster-in-supervised/" />
 
@@ -79,19 +79,19 @@
 
 
 <meta itemprop="name" content="聚类分析在有监督学习里的应用">
-<meta itemprop="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采">
+<meta itemprop="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该">
 
 
 <meta itemprop="datePublished" content="2018-06-12T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="462">
+<meta itemprop="wordCount" content="1053">
 
 
 
 <meta itemprop="keywords" content="Clustering," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="聚类分析在有监督学习里的应用"/>
-<meta name="twitter:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采"/>
+<meta name="twitter:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -295,8 +295,8 @@
               <a href="/categories/r2.ai/"> R2.ai </a>
             
           </div>
-        <span class="more-meta"> 462 words </span>
-        <span class="more-meta"> 1 min read </span>
+        <span class="more-meta"> 1053 words </span>
+        <span class="more-meta"> 3 min read </span>
       </div>
     </header>
 
@@ -320,6 +320,11 @@
 <ul>
 <li><a href="#2-1-不使用ensemble的情况">2.1 不使用ensemble的情况</a></li>
 </ul></li>
+<li><a href="#2-2-更换数据集">2.2 更换数据集</a>
+<ul>
+<li><a href="#2-2-1">2.2.1</a></li>
+<li><a href="#2-2-2">2.2.2</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -334,6 +339,12 @@
       
 
 <h3 id="先聚类再分类">先聚类再分类</h3>
+
+<p>一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。</p>
+
+<p>该方法训练很耗时，且数据集太小时容易产生过拟合，慎用。另外，在自动化流程中，需要谨慎控制每一类的样本量。</p>
+
+<p>此文档中，聚类方法均使用kmeans，后续可拓展。</p>
 
 <p><em>参考文献：<a href="https://arxiv.org/abs/1509.06163">The Utility of Clustering in Prediction Tasks</a></em></p>
 
@@ -386,14 +397,139 @@
 
 <h5 id="2-先对数据集进行聚类-再对各个类进行训练">2. 先对数据集进行聚类，再对各个类进行训练</h5>
 
-<p>总体思路见下图：
-<img src="/image/Using Clustering in the Pre-processing Procedure/screen shot of method.PNG" alt="image" /></p>
+<p>总体思路见下图：</p>
+
+<p><img src="/image/Using Clustering in the Pre-processing Procedure/screen shot of method.PNG" alt="image" /></p>
 
 <h6 id="2-1-不使用ensemble的情况">2.1 不使用ensemble的情况</h6>
 
-<p>k依次取1,2,3,&hellip;, 每一轮计算中，先将training data聚成k类，然后分别使用auto-sklearn 0.3.0/random forest训练，最终汇集预测值，然后计算AUC。完成全部计算后，对比不同k值对预测的影响。找到预测效果较好的设定，并尝试解释聚类的合理性。</p>
+<p>k依次取1,2,3,&hellip;, 每一轮计算中，先将training data标准化，再聚成k类，然后分别使用auto-sklearn 0.3.0/random forest训练，最终汇集预测值，然后计算AUC。完成全部计算后，对比不同k值对预测的影响。找到预测效果较好的设定，并尝试解释聚类的合理性。</p>
 
 <p>此例中，样本量较小，所以至多考虑3类。在样本量较大时，可以加入k值的自动选择机制。</p>
+
+<p>在此例中， 使用先聚类在分类的方法<del>未见明显作用</del>，原因可能是数据量太小，聚类之后进一步缩小了样本量，导致模型<strong>过拟合</strong>。</p>
+
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>k=1</th>
+<th>k=2</th>
+<th>k=3</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>轮廓系数（+）</td>
+<td>-</td>
+<td>0.285</td>
+<td>0.307</td>
+</tr>
+
+<tr>
+<td>训练集AUC</td>
+<td>0.837</td>
+<td>0.874</td>
+<td>0.918</td>
+</tr>
+
+<tr>
+<td>训练集accuracy</td>
+<td>0.852</td>
+<td>0.889</td>
+<td>0.928</td>
+</tr>
+
+<tr>
+<td>kaggle accuracy</td>
+<td>0.780</td>
+<td>0.770</td>
+<td>0.713</td>
+</tr>
+</tbody>
+</table>
+
+<p>此外，一个自然的想法是，数据集本身是否存在一定的聚集模式。这里使用manifold learning将原始数据中的X值降维可视化，并使用轮廓系数最大情形下的聚类标签着色，得到下图。可见，该数据集并不具有天然可分性。</p>
+
+<p><img src="/image/Using Clustering in the Pre-processing Procedure/t-SNE of Titanic clean.png" alt="image" /></p>
+
+<h5 id="2-2-更换数据集">2.2 更换数据集</h5>
+
+<p>于是，我们改换数据量更大的数据进行实验,或者有明显聚集性的数据继续实验。</p>
+
+<h6 id="2-2-1">2.2.1</h6>
+
+<p>数据集：<a href="http://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients">default of credit card clients</a>， 3w行，25列。</p>
+
+<p>训练集，测试集划分：70%， 30%。
+使用k-means进行聚类，在k=2时，轮廓系数达到最高。降维可视化后的数据，仍是不具有明显聚集性的数据。</p>
+
+<p><img src="/image/Using Clustering in the Pre-processing Procedure/credit_cluster.png" alt="image" /></p>
+
+<p>训练时长统一为500s。结果并未显示聚类对效果有改进，相反时间耗费大大增加。</p>
+
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>k=1</th>
+<th>k=2</th>
+<th>k=3</th>
+<th>k=4</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>轮廓系数（+）</td>
+<td>-</td>
+<td>0.355</td>
+<td>0.188</td>
+<td>0.165</td>
+</tr>
+
+<tr>
+<td>训练集AUC</td>
+<td>0.837</td>
+<td>0.880</td>
+<td>0.770</td>
+<td>0.864</td>
+</tr>
+
+<tr>
+<td>训练集accuracy</td>
+<td>0.827</td>
+<td>0.864</td>
+<td>0.837</td>
+<td>0.880</td>
+</tr>
+
+<tr>
+<td>测试集AUC</td>
+<td>0.784</td>
+<td>0.752</td>
+<td>0.702</td>
+<td>0.713</td>
+</tr>
+
+<tr>
+<td>测试集accuracy</td>
+<td>0.822</td>
+<td>0.819</td>
+<td>0.824</td>
+<td>0.818</td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="2-2-2">2.2.2</h6>
+
+<p>数据集：<a href="https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/">Abalone</a>，4177行，9列。</p>
+
+<p>训练集，测试集划分：70%， 30%</p>
+
+<p>$$\displaystyle\frac{x+y}{y+z}$$</p>
 
     </div>
 
@@ -430,7 +566,7 @@
     id: 'Cluster in Supervised.md',
     title: '聚类分析在有监督学习里的应用',
     link: decodeURI(location.href),
-    desc: '先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做特征提取，得到全部都是数值型变量，且有解释性的训练数据和测试数据。 1. 直接采',
+    desc: '先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该',
     owner: 'philharmonic77',
     repo: 'phil77.com',
     oauth: {
@@ -450,9 +586,6 @@
       <div class="social-links">
       <a href="https://github.com/philharmonic77" rel="me noopener" class="iconfont icon-github"
         title="github" target="_blank">
-      </a>
-      <a href="https://weibo.com/philharmonic777?refer_flag=1001030101_&amp;is_hot=1" rel="me noopener" class="iconfont icon-weibo"
-        title="weibo" target="_blank">
       </a>
   <a href="/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">

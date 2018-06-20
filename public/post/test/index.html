@@ -25,7 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JIN Shuhan" />
-  <meta name="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。" />
+  <meta name="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -58,7 +58,7 @@
 
 
 <meta property="og:title" content="聚类分析在有监督学习里的应用" />
-<meta property="og:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。" />
+<meta property="og:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/test/" />
 
@@ -79,19 +79,19 @@
 
 
 <meta itemprop="name" content="聚类分析在有监督学习里的应用">
-<meta itemprop="description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。">
+<meta itemprop="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该">
 
 
 <meta itemprop="datePublished" content="2018-06-12T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="49">
+<meta itemprop="wordCount" content="109">
 
 
 
 <meta itemprop="keywords" content="Clustering," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="聚类分析在有监督学习里的应用"/>
-<meta name="twitter:description" content="先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。"/>
+<meta name="twitter:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -265,7 +265,7 @@
           <ul class="submenu">
             
               <li>
-                <a href="/post/test/">聚类分析在有监督学习里的应用</a>
+                <a href="/post/cluster-in-supervised/">聚类分析在有监督学习里的应用</a>
               </li>
             
           </ul>
@@ -295,7 +295,7 @@
               <a href="/categories/r2.ai/"> R2.ai </a>
             
           </div>
-        <span class="more-meta"> 49 words </span>
+        <span class="more-meta"> 109 words </span>
         <span class="more-meta"> 1 min read </span>
       </div>
     </header>
@@ -305,63 +305,24 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#先聚类再分类">先聚类再分类</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#简单数据集测试">简单数据集测试</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+    
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<h2 id="先聚类再分类">先聚类再分类</h2>
-
+      <div class="section level3">
+<h3>先聚类再分类</h3>
+<p>一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。</p>
+<p>该方法训练很耗时，且数据集太小时容易产生过拟合，慎用。另外，在自动化流程中，需要谨慎控制每一类的样本量。</p>
+<p>此文档中，聚类方法均使用kmeans，后续可拓展。</p>
 <p><em>参考文献：<a href="https://arxiv.org/abs/1509.06163">The Utility of Clustering in Prediction Tasks</a></em></p>
-
-<h5 id="简单数据集测试">简单数据集测试</h5>
-
-<blockquote>
-<p>数据集 kaggle-Titanic</p>
-</blockquote>
-
-<p>先做简单的<a href="https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python">特征提取</a>，得到训练数据集。</p>
-
-<p><img src="/image/Using Clustering in the Pre-processing Procedure/training set.PNG" alt="image" /></p>
+</div>
 
     </div>
 
     
     
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span class="item-content">JIN Shuhan</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">LastMod</span>
-    <span class="item-content">2018-06-12</span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">License</span>
-    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
-  </p>
-</div>
 
     
     
@@ -376,7 +337,17 @@
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/cluster-in-supervised/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">聚类分析在有监督学习里的应用</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
+          <a class="next" href="/post/_book/_main/">
+            <span class="next-text nav-default"></span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
     
@@ -390,12 +361,12 @@
     <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
   <script type="text/javascript">
   const gitment = new Gitment({
-    id: 'test.md',
+    id: 'test.html',
     title: '聚类分析在有监督学习里的应用',
     link: decodeURI(location.href),
-    desc: '先聚类再分类 参考文献：The Utility of Clustering in Prediction Tasks 简单数据集测试 数据集 kaggle-Titanic 先做简单的特征提取，得到训练数据集。',
+    desc: '先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该',
     owner: 'philharmonic77',
-    repo: 'Blog-s-Comment',
+    repo: 'phil77.com',
     oauth: {
       client_id: 'ccb29cbb644371e81c41',
       client_secret: 'e72a578ffb76fff93b8f9ac3e3399164c7b77800'
@@ -413,9 +384,6 @@
       <div class="social-links">
       <a href="https://github.com/philharmonic77" rel="me noopener" class="iconfont icon-github"
         title="github" target="_blank">
-      </a>
-      <a href="https://weibo.com/philharmonic777?refer_flag=1001030101_&amp;is_hot=1" rel="me noopener" class="iconfont icon-weibo"
-        title="weibo" target="_blank">
       </a>
   <a href="/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">
