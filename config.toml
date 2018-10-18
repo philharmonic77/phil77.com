@@ -3,6 +3,7 @@ title = "philharmonic77's blog"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-jane"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3                                              # 首页每页显示的文章数
