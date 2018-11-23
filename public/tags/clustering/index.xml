@@ -6,10 +6,19 @@
     <description>Recent content in Clustering on philharmonic77&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/clustering/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto</description>
+    </item>
     
     <item>
       <title>聚类分析在有监督学习里的应用</title>

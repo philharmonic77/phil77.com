@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>聚类分析在有监督学习里的应用 - philharmonic77&#39;s blog</title>
+  <title>test - philharmonic77&#39;s blog</title>
   <link rel="alternate" hreflang="en" href="/" />
 
 <meta name="renderer" content="webkit" />
@@ -25,7 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JIN Shuhan" />
-  <meta name="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
+  <meta name="description" content="1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -57,18 +57,16 @@
 
 
 
-<meta property="og:title" content="聚类分析在有监督学习里的应用" />
-<meta property="og:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
+<meta property="og:title" content="test" />
+<meta property="og:description" content="1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/test/" />
 
 
 
-<meta property="article:published_time" content="2018-06-12T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-11-23T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2018-06-12T00:00:00&#43;00:00"/>
-
-
+<meta property="article:modified_time" content="2018-11-23T00:00:00&#43;00:00"/>
 
 
 
@@ -78,20 +76,22 @@
 
 
 
-<meta itemprop="name" content="聚类分析在有监督学习里的应用">
-<meta itemprop="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该">
 
 
-<meta itemprop="datePublished" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="109">
+<meta itemprop="name" content="test">
+<meta itemprop="description" content="1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto">
+
+
+<meta itemprop="datePublished" content="2018-11-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-11-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="264">
 
 
 
 <meta itemprop="keywords" content="Clustering," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="聚类分析在有监督学习里的应用"/>
-<meta name="twitter:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该"/>
+<meta name="twitter:title" content="test"/>
+<meta name="twitter:description" content="1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -268,6 +268,10 @@
                 <a href="/post/cluster-in-supervised/">聚类分析在有监督学习里的应用</a>
               </li>
             
+              <li>
+                <a href="/post/test/">test</a>
+              </li>
+            
           </ul>
 
         
@@ -286,16 +290,16 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">聚类分析在有监督学习里的应用</h1>
+      <h1 class="post-title">test</h1>
       
       <div class="post-meta">
-        <span class="post-time"> 2018-06-12 </span>
+        <span class="post-time"> 2018-11-23 </span>
         <div class="post-category">
             
               <a href="/categories/r2.ai/"> R2.ai </a>
             
           </div>
-        <span class="more-meta"> 109 words </span>
+        <span class="more-meta"> 264 words </span>
         <span class="more-meta"> 1 min read </span>
       </div>
     </header>
@@ -311,12 +315,28 @@
 
     
     <div class="post-content">
-      <div class="section level3">
-<h3>先聚类再分类</h3>
-<p>一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。</p>
-<p>该方法训练很耗时，且数据集太小时容易产生过拟合，慎用。另外，在自动化流程中，需要谨慎控制每一类的样本量。</p>
-<p>此文档中，聚类方法均使用kmeans，后续可拓展。</p>
-<p><em>参考文献：<a href="https://arxiv.org/abs/1509.06163">The Utility of Clustering in Prediction Tasks</a></em></p>
+      <div id="gensim" class="section level4">
+<h4>1. gensim</h4>
+<p>gensim官方教程：<a href="https://radimrehurek.com/gensim/index.html" class="uri">https://radimrehurek.com/gensim/index.html</a></p>
+<div id="gensim" class="section level5">
+<h5>(1) gensim初步</h5>
+<p>根据Tutorials，了解Corpora， Models， Similarity即可。</p>
+</div>
+<div id="gensimword2vecfasttext" class="section level5">
+<h5>(2) 利用gensim训练Word2Vec，Fasttext</h5>
+<p>根据API，了解各种词向量的训练。eg：models.word2vec – Word2vec embeddings</p>
+</div>
+</div>
+<div id="elmo-embedding-from-language-models" class="section level4">
+<h4>2 ELMo( Embedding from Language Models)</h4>
+<p>github地址：<a href="https://github.com/allenai/bilm-tf" class="uri">https://github.com/allenai/bilm-tf</a></p>
+<p>paper地址：<a href="https://arxiv.org/pdf/1802.05365.pdf" class="uri">https://arxiv.org/pdf/1802.05365.pdf</a></p>
+<p>采用bi-LSTM</p>
+<p><span class="math inline">\(e^{i\pi} + 1 = 0\)</span></p>
+<div class="figure">
+<img src="/image/Using%20Clustering%20in%20the%20Pre-processing%20Procedure/screen%20shot%20of%20method.PNG" alt="image" />
+<p class="caption">image</p>
+</div>
 </div>
 
     </div>
@@ -337,14 +357,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/cluster-in-supervised/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">聚类分析在有监督学习里的应用</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
-          <a class="next" href="/post/_book/_main/">
-            <span class="next-text nav-default"></span>
+          <a class="next" href="/post/cluster-in-supervised/">
+            <span class="next-text nav-default">聚类分析在有监督学习里的应用</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -362,9 +377,9 @@
   <script type="text/javascript">
   const gitment = new Gitment({
     id: 'test.html',
-    title: '聚类分析在有监督学习里的应用',
+    title: 'test',
     link: decodeURI(location.href),
-    desc: '先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该',
+    desc: '1. gensim gensim官方教程：https:\/\/radimrehurek.com\/gensim\/index.html (1) gensim初步 根据Tuto',
     owner: 'philharmonic77',
     repo: 'phil77.com',
     oauth: {

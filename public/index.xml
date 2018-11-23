@@ -6,10 +6,44 @@
     <description>Recent content on philharmonic77&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      
+        <description>&lt;div id=&#34;gensim&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1. gensim&lt;/h4&gt;
+&lt;p&gt;gensim官方教程：&lt;a href=&#34;https://radimrehurek.com/gensim/index.html&#34; class=&#34;uri&#34;&gt;https://radimrehurek.com/gensim/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;gensim&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;(1) gensim初步&lt;/h5&gt;
+&lt;p&gt;根据Tutorials，了解Corpora， Models， Similarity即可。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;gensimword2vecfasttext&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;(2) 利用gensim训练Word2Vec，Fasttext&lt;/h5&gt;
+&lt;p&gt;根据API，了解各种词向量的训练。eg：models.word2vec – Word2vec embeddings&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;elmo-embedding-from-language-models&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;2 ELMo( Embedding from Language Models)&lt;/h4&gt;
+&lt;p&gt;github地址：&lt;a href=&#34;https://github.com/allenai/bilm-tf&#34; class=&#34;uri&#34;&gt;https://github.com/allenai/bilm-tf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;paper地址：&lt;a href=&#34;https://arxiv.org/pdf/1802.05365.pdf&#34; class=&#34;uri&#34;&gt;https://arxiv.org/pdf/1802.05365.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;采用bi-LSTM&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(e^{i\pi} + 1 = 0\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/image/Using%20Clustering%20in%20the%20Pre-processing%20Procedure/screen%20shot%20of%20method.PNG&#34; alt=&#34;image&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>聚类分析在有监督学习里的应用</title>
