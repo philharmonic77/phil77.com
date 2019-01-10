@@ -6,27 +6,18 @@
     <description>Recent content in R2.ai on philharmonic77&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r2.ai/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>test</title>
-      <link>/post/test/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/test/</guid>
-      <description>1. gensim gensim官方教程：https://radimrehurek.com/gensim/index.html (1) gensim初步 根据Tuto</description>
-    </item>
-    
-    <item>
-      <title>聚类分析在有监督学习里的应用</title>
+      <title>新年愿望</title>
       <link>/post/cluster-in-supervised/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/cluster-in-supervised/</guid>
-      <description>先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该</description>
+      <description>好好写博客吧^o^&amp;hellip;</description>
     </item>
     
   </channel>

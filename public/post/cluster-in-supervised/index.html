@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>聚类分析在有监督学习里的应用 - philharmonic77&#39;s blog</title>
+  <title>新年愿望 - philharmonic77&#39;s blog</title>
   <link rel="alternate" hreflang="en" href="/" />
 
 <meta name="renderer" content="webkit" />
@@ -25,7 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JIN Shuhan" />
-  <meta name="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
+  <meta name="description" content="好好写博客吧^o^&amp;hellip;" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -57,18 +57,16 @@
 
 
 
-<meta property="og:title" content="聚类分析在有监督学习里的应用" />
-<meta property="og:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该" />
+<meta property="og:title" content="新年愿望" />
+<meta property="og:description" content="好好写博客吧^o^&hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/cluster-in-supervised/" />
 
 
 
-<meta property="article:published_time" content="2018-06-12T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2019-01-10T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2018-06-12T00:00:00&#43;00:00"/>
-
-
+<meta property="article:modified_time" content="2019-01-10T00:00:00&#43;00:00"/>
 
 
 
@@ -78,20 +76,22 @@
 
 
 
-<meta itemprop="name" content="聚类分析在有监督学习里的应用">
-<meta itemprop="description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该">
 
 
-<meta itemprop="datePublished" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-06-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1015">
+<meta itemprop="name" content="新年愿望">
+<meta itemprop="description" content="好好写博客吧^o^&hellip;">
+
+
+<meta itemprop="datePublished" content="2019-01-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-10T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="17">
 
 
 
-<meta itemprop="keywords" content="Clustering," />
+<meta itemprop="keywords" content="其他," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="聚类分析在有监督学习里的应用"/>
-<meta name="twitter:description" content="先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该"/>
+<meta name="twitter:title" content="新年愿望"/>
+<meta name="twitter:description" content="好好写博客吧^o^&hellip;"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -265,11 +265,7 @@
           <ul class="submenu">
             
               <li>
-                <a href="/post/cluster-in-supervised/">聚类分析在有监督学习里的应用</a>
-              </li>
-            
-              <li>
-                <a href="/post/test/">test</a>
+                <a href="/post/cluster-in-supervised/">新年愿望</a>
               </li>
             
           </ul>
@@ -290,17 +286,17 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">聚类分析在有监督学习里的应用</h1>
+      <h1 class="post-title">新年愿望</h1>
       
       <div class="post-meta">
-        <span class="post-time"> 2018-06-12 </span>
+        <span class="post-time"> 2019-01-10 </span>
         <div class="post-category">
             
-              <a href="/categories/r2.ai/"> R2.ai </a>
+              <a href="/categories/%E5%85%B6%E4%BB%96/"> 其他 </a>
             
           </div>
-        <span class="more-meta"> 1015 words </span>
-        <span class="more-meta"> 3 min read </span>
+        <span class="more-meta"> 17 words </span>
+        <span class="more-meta"> 1 min read </span>
       </div>
     </header>
 
@@ -309,222 +305,13 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#先聚类再分类">先聚类再分类</a>
-<ul>
-<li><a href="#简单数据集测试">简单数据集测试</a>
-<ul>
-<li><a href="#1-直接采用分类模型">1. 直接采用分类模型</a></li>
-<li><a href="#2-先对数据集进行聚类-再对各个类进行训练">2. 先对数据集进行聚类，再对各个类进行训练</a>
-<ul>
-<li><a href="#2-1-不使用ensemble的情况">2.1 不使用ensemble的情况</a></li>
-</ul></li>
-<li><a href="#2-2-更换数据集">2.2 更换数据集</a>
-<ul>
-<li><a href="#2-2-1">2.2.1</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+    
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<h3 id="先聚类再分类">先聚类再分类</h3>
-
-<p>一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。</p>
-
-<p>该方法训练很耗时，且数据集太小时容易产生过拟合，慎用。另外，在自动化流程中，需要谨慎控制每一类的样本量。</p>
-
-<p>此文档中，聚类方法均使用kmeans，后续可拓展。</p>
-
-<p><em>参考文献：<a href="https://arxiv.org/abs/1509.06163">The Utility of Clustering in Prediction Tasks</a></em></p>
-
-<h4 id="简单数据集测试">简单数据集测试</h4>
-
-<blockquote>
-<p>数据集 <a href="https://www.kaggle.com/c/titanic/data">kaggle-Titanic</a></p>
-</blockquote>
-
-<p>先做<a href="https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python">特征提取</a>，得到全部都是数值型变量，且有解释性的训练数据和测试数据。</p>
-
-<p><img src="/image/Using Clustering in the Pre-processing Procedure/training set.PNG" alt="image" /></p>
-
-<h5 id="1-直接采用分类模型">1. 直接采用分类模型</h5>
-
-<p>将training dataset用<a href="http://stage20.newa-tech.com:22000/modeling/169/2">R2-Learn</a>进行训练，选择推荐的ensemble模型，
-并在<a href="http://stage20.newa-tech.com:22000/deploy/169">deployment环节</a>使用test dataset，得到y值的预测之后，上传到kaggle进行评分。</p>
-
-<p>采用auto-sklearn 0.3.0以默认参数训练5min，同样使用kaggle评分。结果汇总如下：</p>
-
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>R2-Learn</th>
-<th>AutoML 0.3.0</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>训练时间</td>
-<td>5 min</td>
-<td>5 min</td>
-</tr>
-
-<tr>
-<td>训练集AUC</td>
-<td>0.87</td>
-<td>0.84</td>
-</tr>
-
-<tr>
-<td>kaggle accuracy</td>
-<td>0.732</td>
-<td>0.775</td>
-</tr>
-</tbody>
-</table>
-
-<h5 id="2-先对数据集进行聚类-再对各个类进行训练">2. 先对数据集进行聚类，再对各个类进行训练</h5>
-
-<p>总体思路见下图：</p>
-
-<p><img src="/image/Using Clustering in the Pre-processing Procedure/screen shot of method.PNG" alt="image" /></p>
-
-<h6 id="2-1-不使用ensemble的情况">2.1 不使用ensemble的情况</h6>
-
-<p>k依次取1,2,3,&hellip;, 每一轮计算中，先将training data标准化，再聚成k类，然后分别使用auto-sklearn 0.3.0/random forest训练，最终汇集预测值，然后计算AUC。完成全部计算后，对比不同k值对预测的影响。找到预测效果较好的设定，并尝试解释聚类的合理性。</p>
-
-<p>此例中，样本量较小，所以至多考虑3类。在样本量较大时，可以加入k值的自动选择机制。</p>
-
-<p>在此例中， 使用先聚类在分类的方法<del>未见明显作用</del>，原因可能是数据量太小，聚类之后进一步缩小了样本量，导致模型<strong>过拟合</strong>。</p>
-
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>k=1</th>
-<th>k=2</th>
-<th>k=3</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>轮廓系数（+）</td>
-<td>-</td>
-<td>0.285</td>
-<td>0.307</td>
-</tr>
-
-<tr>
-<td>训练集AUC</td>
-<td>0.837</td>
-<td>0.874</td>
-<td>0.918</td>
-</tr>
-
-<tr>
-<td>训练集accuracy</td>
-<td>0.852</td>
-<td>0.889</td>
-<td>0.928</td>
-</tr>
-
-<tr>
-<td>kaggle accuracy</td>
-<td>0.780</td>
-<td>0.770</td>
-<td>0.713</td>
-</tr>
-</tbody>
-</table>
-
-<p>此外，一个自然的想法是，数据集本身是否存在一定的聚集模式。这里使用manifold learning将原始数据中的X值降维可视化，并使用轮廓系数最大情形下的聚类标签着色，得到下图。可见，该数据集并不具有天然可分性。</p>
-
-<p><img src="/image/Using Clustering in the Pre-processing Procedure/t-SNE of Titanic clean.png" alt="image" /></p>
-
-<h5 id="2-2-更换数据集">2.2 更换数据集</h5>
-
-<p>于是，我们改换数据量更大的数据进行实验,或者有明显聚集性的数据继续实验。</p>
-
-<h6 id="2-2-1">2.2.1</h6>
-
-<p>数据集：<a href="http://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients">default of credit card clients</a>， 3w行，25列。</p>
-
-<p>训练集，测试集划分：70%， 30%。
-使用k-means进行聚类，在k=2时，轮廓系数达到最高。降维可视化后的数据，仍是不具有明显聚集性的数据。</p>
-
-<p><img src="/image/Using Clustering in the Pre-processing Procedure/credit_cluster.png" alt="image" /></p>
-
-<p>训练时长统一为500s。结果并未显示聚类对效果有改进，相反时间耗费大大增加。</p>
-
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>k=1</th>
-<th>k=2</th>
-<th>k=3</th>
-<th>k=4</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>轮廓系数（+）</td>
-<td>-</td>
-<td>0.355</td>
-<td>0.188</td>
-<td>0.165</td>
-</tr>
-
-<tr>
-<td>训练集AUC</td>
-<td>0.837</td>
-<td>0.880</td>
-<td>0.770</td>
-<td>0.864</td>
-</tr>
-
-<tr>
-<td>训练集accuracy</td>
-<td>0.827</td>
-<td>0.864</td>
-<td>0.837</td>
-<td>0.880</td>
-</tr>
-
-<tr>
-<td>测试集AUC</td>
-<td>0.784</td>
-<td>0.752</td>
-<td>0.702</td>
-<td>0.713</td>
-</tr>
-
-<tr>
-<td>测试集accuracy</td>
-<td>0.822</td>
-<td>0.819</td>
-<td>0.824</td>
-<td>0.818</td>
-</tr>
-</tbody>
-</table>
+      <p>好好写博客吧^o^&hellip;</p>
 
     </div>
 
@@ -537,18 +324,13 @@
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/tags/clustering/">Clustering</a>
+          <a href="/tags/%E5%85%B6%E4%BB%96/">其他</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/test/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">test</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
       </nav>
     </footer>
@@ -564,9 +346,9 @@
   <script type="text/javascript">
   const gitment = new Gitment({
     id: 'Cluster in Supervised.md',
-    title: '聚类分析在有监督学习里的应用',
+    title: '新年愿望',
     link: decodeURI(location.href),
-    desc: '先聚类再分类 一般用于分析人员本身具有行业知识，认为聚类的处理是必要的情况下，因为一般来说有监督学习利用了标签信息，效果是优于无监督学习的。 该',
+    desc: '好好写博客吧^o^\x26hellip;',
     owner: 'philharmonic77',
     repo: 'phil77.com',
     oauth: {
@@ -604,8 +386,8 @@
   <span class="copyright-year">
     &copy;
     
-      2017 -
-    2018
+      2018 -
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span><span class="author">JIN Shuhan</span></span>

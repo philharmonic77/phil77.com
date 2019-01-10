@@ -3,15 +3,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/post/test/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/post/cluster-in-supervised/</loc>
-    <lastmod>2018-06-12T00:00:00+00:00</lastmod>
+    <loc>/post/new-year/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -23,36 +16,35 @@
   </url>
   
   <url>
-    <loc>/tags/clustering/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r2.ai/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
