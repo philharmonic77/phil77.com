@@ -18,7 +18,35 @@
       
       <guid>/post/new-year/</guid>
       
-        <description>&lt;p&gt;好好写博客吧&lt;sup&gt;o&lt;/sup&gt;…&lt;/p&gt;
+        <description>&lt;p&gt;像&lt;em&gt;SpongeBob&lt;/em&gt;一样：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] 读很多书&lt;/li&gt;
+&lt;li&gt;[ ] 写很多代码&lt;/li&gt;
+&lt;li&gt;[ ] 认真写博客&lt;/li&gt;
+&lt;li&gt;[ ] 保持好奇&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>新年愿望</title>
+      <link>/post/new-year/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/new-year/</guid>
+      
+        <description>
+
+&lt;h5 id=&#34;像-spongebob-一样&#34;&gt;像*SpongeBob*一样：&lt;/h5&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 读书&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 写代码&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 写博客&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 保持好奇&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; 认真生活&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
