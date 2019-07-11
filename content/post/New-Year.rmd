@@ -15,7 +15,6 @@ menu:
 
 - 读一些书，写很多代码，好好写博客
 - 按照自己的节奏，认真生活
-- 保持好奇，保持耐心
+- 保持好奇，保持耐心 
 
-$x=-b\pm\sqrt{b^2-4ac}\frac{2}{a}$
-$f(a) = \frac{1}{2\pi i} \oint\frac{f(z)}{z-a}dz$
+![image](../static/image/blog01/pic.jpg)
