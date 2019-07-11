@@ -52,6 +52,11 @@ defaultContentLanguage = "en"           # Default language to use
   weight = 40
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "About"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
